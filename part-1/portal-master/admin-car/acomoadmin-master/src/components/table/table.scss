@@ -1,0 +1,20 @@
+.table{
+    .cellWrapper{
+        display: flex;
+        align-items: center;
+    }
+    .status{
+        padding: 5px;
+        border-radius: 5px;
+
+        &.Approved{
+            color: solid dark green;
+            font-weight: bold;
+            
+        } 
+        &.Pending{
+            color: goldenrod;
+            font-weight: bold;
+        }
+    }
+}

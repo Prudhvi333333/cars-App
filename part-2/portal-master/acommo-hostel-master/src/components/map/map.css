@@ -1,0 +1,229 @@
+
+
+.mapClass{
+  margin-top: 18vh;
+  height: 100px;
+  display: flex;
+}
+
+body {
+    color: #5bc0de;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .input-field {
+    width: 100%;
+    background-color: #d7d7d7;
+    margin: 10px 0;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+  }
+  
+  .input-field i {
+    text-align: center;
+    line-height: 55px;
+    color: #5bc0de;
+    transition: 0.5s;
+    font-size: 1.1rem;
+  }
+  
+  .input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .input-field input::placeholder {
+      color: #aaa;
+      font-weight: 500;
+    }
+    
+  .input-field:active{
+      border-color: rgb(69, 137, 204);
+      box-shadow: 0 0 8px 0 rgb(69, 137, 204);
+    }
+    .date {
+      width: 100%;
+      background-color: #d7d7d7;
+      margin: 10px 0;
+      height: 55px;
+      position: relative;
+      border-radius: 55px;
+      display: grid;
+      grid-template-columns: 15% 85%;
+      padding: 0 0.4rem;
+      position: relative;
+    }
+    
+    .date i {
+      text-align: center;
+      line-height: 55px;
+      color: #5bc0de;
+      transition: 0.5s;
+      font-size: 1.1rem;
+    }
+    
+    .date input {
+      background: none;
+      outline: none;
+      border: none;
+      line-height: 1;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #333;
+    }
+    
+    .date input::placeholder {
+        color: #aaa;
+        font-weight: 500;
+      }
+      
+    .date:active{
+        border-color: rgb(69, 137, 204);
+        box-shadow: 0 0 8px 0 rgb(69, 137, 204);
+      }
+      .date2 {
+        width: 100%;
+        background-color: #d7d7d7;
+        margin: 10px 0;
+        height: 55px;
+        position: relative;
+        border-radius: 55px;
+        display: grid;
+        grid-template-columns: 15% 85%;
+        padding: 0 0.4rem;
+        position: relative;
+      }
+      
+      .date2 i {
+        text-align: center;
+        line-height: 55px;
+        color: #5bc0de;
+        transition: 0.5s;
+        font-size: 1.1rem;
+      }
+      
+      .date2 input {
+        background: none;
+        outline: none;
+        border: none;
+        line-height: 1;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: #333;
+      }
+      
+      .date2 input::placeholder {
+          color: #aaa;
+          font-weight: 500;
+        }
+      .date2:active{
+          border-color: rgb(69, 137, 204);
+          box-shadow: 0 0 8px 0 rgb(69, 137, 204);
+        }
+        .name{
+          position: relative;
+          font-size: 1.5rem;
+
+        }
+    .btn {
+      width: 60px;
+      background-color:  #7BB4E3;
+      border: none;
+      outline: none;
+      height: 49px;
+      position: relative;
+      border-radius: 49px;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin: 10px 0;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+    .btn:active{
+      border-color: rgb(61, 120, 180);
+      box-shadow: 0 0 8px 0 rgb(42, 85, 128);
+    }
+
+  
+  .jumbotron {
+    background-color: transparent;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .jumbotron h1 {
+    letter-spacing: 2.5px;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  .jumbotron h1,
+  .jumbotron p {
+    text-align: center;
+  }
+  
+  .jumbotron p {
+    font-size: 1em;
+  }
+  
+  #googleMap {
+    width: 65%;
+    height: 500px;
+    position: relative;
+  }
+  .disl{
+    position: relative;
+    left: -170px;
+  }
+
+  #output {
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    top: -630px;
+    left: -500px;
+     }
+ .status{
+  position: relative;
+  font-size: 25px;
+ }
+  #mode {
+    color: black;
+  }
+
+  .right{
+    margin-top: 1vh;
+  }
+  .left{
+    height: 40vh;
+  }
+
+  #carDetails button{
+    margin-left: 3vh;
+    margin-top: 23vh;
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid white;
+    background-color: #5bc0de;
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+    position: relative;
+  }
+
+  #carHidden{
+    display: none;
+    color: white;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.786);
+    padding: 25px;
+    margin-left: -60vh;
+    margin-top: -28vh;
+  }

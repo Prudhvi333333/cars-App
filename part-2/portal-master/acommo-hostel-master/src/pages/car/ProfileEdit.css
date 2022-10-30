@@ -1,0 +1,25 @@
+/* .ProfileEdit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.main div{
+    margin-left: -40vh;
+}
+
+input{
+    border-bottom: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 26px;
+    width: 50%;
+    padding: 10px;
+} */

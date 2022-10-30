@@ -1,0 +1,159 @@
+  .hh1{
+    margin-left: 40%;
+    font-size: 50px;
+  }
+  .sub {
+    display: flex;
+    height: 90%;
+    margin-left: 2%;
+    width: 90%;
+    box-shadow: 10px 0px 20px 2px rgba(35, 40, 40, 0.533);
+    padding: 10px;
+    background-color: white;
+  }
+
+   .details{
+    width: 50%;
+    margin-left: 5%;
+    height: 100vx;
+    /* background-color: aqua; */
+  }
+
+  .formta{
+    /* background-color:aquamarine; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lables{
+    /* background-color: azure; */
+    height: 50px;
+    width: 100%;
+  }
+
+  #h3_detaile{
+    font-size: 30px;
+  }
+
+  .lables label{
+    width: 20%;
+    display: flex;
+    font-size: 20px;
+    float: left;
+    padding: 10px;
+    background-color: rgb(234, 255, 255);
+    border: 1px solid rgba(0, 0, 0, 0.208);
+  }
+
+  .lables input{
+    width: 41%;
+    height: 47%;
+    padding: 10px;
+  }
+
+  #staffAllocImg{
+    float: left;
+    width: 105%;
+  }
+
+  .checkbox{
+    margin-top: 1%;
+    display: flex;
+    width: 80%;
+  }
+
+  .subCheck{
+    margin-right: 5%;
+  }
+
+  .checkbox label{
+    font-size: 25px;
+  }
+
+  .checkbox input{
+    height: 20px;
+    width: 20px;
+  }
+
+  .kate{
+    /* background-color: aqua; */
+    width: 67.5%;
+    display: flex;
+  }
+
+  .subDate{
+    display: flex;
+    width: 25%;
+    margin-left: 5%;
+  }
+
+  .subDate label{
+    /* background-color: bisque; */
+    display: flex;
+    font-size: 30px;
+    margin-right: 3%;
+  }
+
+  #kkkkk{
+    /* margin-left: 200px; */
+    width: 2px;
+  }
+  #lllll{
+    margin-left: 80px;
+    width: 2px;
+  }
+  #jjjjj{
+    width: 2500px;
+  }
+  .ooo{
+    margin-left: 20%;
+  }
+
+  .kkk{
+    /* width: 10000px; */
+  }
+  .subDate input{
+    /* background-color: blueviolet; */
+    /* width: 100%; */
+    height: 90%;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+
+  #block{
+    display: none;
+  }
+
+  #submit{
+    float: right;
+    margin-top: 1%;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 33%;
+    background-color: rgb(234, 255, 255);
+  }
+
+  #room{
+    margin-right: 3%;
+    height: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    width: 10%;
+  }
+
+  .subRoom{
+    margin-top: 110%;
+  }
+
+  #room label{
+    font-size: 25px;
+    float: left;
+  }
+
+  #room input{
+    margin-top: 10%;
+    float: right;
+  }
+

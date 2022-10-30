@@ -1,0 +1,427 @@
+body {
+  background-color: rgb(255, 255, 255);
+  /* color: #5bc0de; */
+  color: #333;
+  font-family: "Poppins", sans-serif;
+}
+
+.jumbotron {
+  width: 98.3%;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+#profile{
+color: #333;
+font-size: 30px;
+position: absolute;
+right: 3vh;
+top: 10vh;
+}
+
+#est{
+  margin-top: 1vh;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.tripdiv{
+display: flex;
+/* flex-direction: column; */
+width: 10vh;
+/* margin-top: 4vh; */
+margin-left: 3vh;
+font-size: 20px;
+}
+
+#butt{
+  margin-top: 4vh;
+}
+
+#subButt{
+  width: 20vh;
+  height: 5vh;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #3859ff;
+  color: white;
+}
+
+.single-round{
+margin-top: 3vh;
+font-size: 24px;
+}
+
+.single-round label{
+margin-right: 3vh;
+margin-left: 1vh;
+}
+
+#profile:hover{
+border-radius: 30px;
+transition: .5s;
+font-size: 35px ;
+background-color: rgba(0, 0, 0, 0.696);
+padding: 3px;
+}
+
+#profile:active{
+background-color: none;
+font-size: 30px;
+}
+
+.top{
+  display: flex;
+  width: 98%;
+  min-width: 600px;
+  justify-content: space-between;
+}
+
+.topLeft{
+margin-right: 1vh;
+width: 50%;
+}
+
+.topRight{
+width: 50%;
+padding-right: 2vh;
+}
+.car-details{
+margin-top: 5%;
+width: 100%;
+display: flex;
+justify-content: center;
+margin-bottom: 2vh;
+}
+
+.sub-car-details{
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+#car-details-Table{
+/* background-color: #5bc0de; */
+width: 100%;
+display: flex;
+justify-content: center;
+}
+
+.sub-car-details-Table{
+display: flex;
+flex-direction: column;
+width: 90%;
+text-align: center;
+}
+
+table{
+background-color: #f0f0f0;
+width: 100%;
+}
+
+#head{
+font-size: 20px;
+padding: 2px;
+background-color: rgb(145, 145, 145);
+border: 5px solid black;
+}
+tr:nth-child(even){
+background-color: #f2f2f2;
+}
+
+
+.carimg{
+min-height: 200px;
+
+min-width: 300px;
+width: 70%;
+}
+
+.carSubCheck label{
+margin-top: 2vh;
+margin-right: 3vh;
+  font-size: 3vh;
+  margin-left: 1vh;
+}
+
+.carSubCheck input{
+height: 25px;
+width: 25px;
+}
+
+.form-group{
+  display: flex;
+}
+
+.carCheckbox{
+  display: flex;
+  margin-bottom: 2vh;
+}
+
+#carBlock{
+  display: none;
+}
+
+.carLables{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2vh;
+}
+
+.carLables label{
+  font-size: 3vh;
+}
+
+.carLables input{
+height: 20px;
+max-width: 500px;
+min-width: 100px;
+  background-color: transparent;
+  border-bottom: 1px solid black;
+  height: 4vh;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* .carLables input:hover{
+box-shadow: 0px 0px 5px 1px#5bc0de;
+} */
+
+.input-field {
+  background-color: #f0f0f0;
+  margin: 1.5vh;
+  border-radius: 55px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0 0.4rem;
+}
+
+.input-field i {
+  text-align: center;
+  line-height: 55px;
+  color: #5bc0de;
+  transition: 0.5s;
+  font-size: 1.1rem;
+}
+
+.input-field input {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.input-field input::placeholder {
+    color: #aaa;
+    font-weight: 500;
+  }
+  
+.input-field:hover{
+    border-color: rgb(69, 137, 204);
+    box-shadow: 0 0 8px 0 rgb(69, 137, 204);
+  }
+.input-field:active{
+    border-color: rgb(69, 137, 204);
+    box-shadow: 0 0 8px 0 rgb(69, 137, 204);
+  }
+  .date {
+    width: 95%;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+  }
+  
+  .date i {
+    text-align: center;
+    line-height: 55px;
+    color: #5bc0de;
+    transition: 0.5s;
+    font-size: 1.1rem;
+  }
+  
+  .date input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .date input::placeholder {
+      color: #aaa;
+      font-weight: 500;
+    }
+    
+  .date:hover{
+      border-color: rgb(69, 137, 204);
+      box-shadow: 0 0 8px 0 rgb(69, 137, 204);
+    }
+  .date:active{
+      border-color: rgb(69, 137, 204);
+      box-shadow: 0 0 8px 0 rgb(69, 137, 204);
+    }
+    .date2 {
+      width: 95%;
+      background-color: #f0f0f0;
+      margin: 10px 0;
+      height: 55px;
+      border-radius: 55px;
+      display: grid;
+      grid-template-columns: 15% 85%;
+      padding: 0 0.4rem;
+    }
+    
+    .date2 i {
+      text-align: center;
+      line-height: 55px;
+      color: #5bc0de;
+      transition: 0.5s;
+      font-size: 1.1rem;
+    }
+    
+    .date2 input {
+      background: none;
+      outline: none;
+      border: none;
+      line-height: 1;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #333;
+    }
+    
+    .date2 input::placeholder {
+        color: #aaa;
+        font-weight: 500;
+      }
+      
+    .date2:hover{
+        border-color: rgb(69, 137, 204);
+        box-shadow: 0 0 8px 0 rgb(69, 137, 204);
+      }
+    .date2:active{
+        border-color: rgb(69, 137, 204);
+        box-shadow: 0 0 8px 0 rgb(69, 137, 204);
+      }
+
+#googleMap {
+  width: 65%;
+  height: 500px;
+  left: 510px;
+  top: -180px;
+}
+.disl{
+  left: -170px;
+}
+
+#output {
+  text-align: center;
+  font-size: 25px;
+  top: -630px;
+  left: -500px;
+   }
+.status{
+font-size: 25px;
+top: -605px;
+left: -585px;
+}
+#mode {
+  color: black;
+}
+
+.formDivLeft{
+margin-right: 2vh;
+}
+
+#submit{
+padding: 3px;
+font-size: 24px;
+font-weight: 700;
+}
+
+.topRight img{
+position: absolute;
+margin-top: -20vh;
+margin-left:-120vh ;
+height: 75vh;
+width: 75vh;
+}
+.map, #status{
+margin-left: 50vh;
+}
+
+.map{
+border: 3px solid black;
+margin-top: 2%;
+}
+
+.mapouter{
+position:relative;
+text-align:right;
+width:100%;
+height:400px;
+}
+.gmap_canvas {
+overflow:hidden;
+background:none!important;
+width:100%;
+height:400px;
+}
+.gmap_iframe {
+height:400px!important;
+}
+
+#distLabel{
+display: flex;
+}
+
+#bookingButton{
+width: 50vh;
+height: 5vh;
+font-size: 24px;
+padding: 5px;
+border-radius: 10px;
+border: none;
+color: white;
+background-color: #3859ff;
+}
+.bookingDiv{
+/* background-color: #5bc0de; */
+display: flex;
+justify-content: center;
+}
+
+#returnBlock{
+display: none;
+}
+
+#returnButton{
+font-size: 30px;
+padding: 1vh;
+width: 30vh;
+border: none;
+color: white;
+background-color: rgb(78, 90, 255);
+border-radius: 30px;
+}
+
+#show-cab-details{
+font-size: 24px;
+font-weight: 500;
+border-radius: 5px;
+box-shadow: 0px 0px 10px 1px black;
+background-color: white;
+}

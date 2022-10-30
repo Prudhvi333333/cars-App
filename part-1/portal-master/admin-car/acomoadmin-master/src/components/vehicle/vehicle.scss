@@ -1,0 +1,58 @@
+.vehicle{
+    display: flex;
+    width: 100%;
+
+    .si{
+        width: 20vh;
+        position: fixed;
+    }
+
+    .vehiclerent{
+        margin-left: 20vh;
+
+        width: 80vh;
+        flex:6;
+        .widgets{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 4vh;
+            gap: 20vh;
+        }
+    
+    }
+
+    .listContainer{
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        padding: 20px;
+        margin: 20px;
+        
+
+        .listTitle{
+            font-weight: 500;
+            color: rgb(135, 20, 20);
+            margin-bottom: 5px;
+        }
+        .userTitleContainer{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-weight: 1000;
+            color: rgb(165, 28, 28);
+            font-weight: bold;
+            margin-bottom: 5px;
+
+            .userAddButton{
+                width: px;
+                border: none;
+                padding: 5px;
+                background-color: teal;
+                border-radius: 5px;
+                margin-left: 5px;
+                cursor: pointer;
+            }
+
+        }
+
+    }
+}

@@ -1,0 +1,304 @@
+.single {
+    display: flex;
+    width: 100%;
+
+    .si{
+        width: 20vh;
+        position: fixed;
+    }
+
+    .singleContainer {
+        width: 150vh;
+        margin-left: 20vh;
+
+        .widgets {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 40px;
+            // gap: 100px;
+        }
+
+        .top {
+            box-shadow: none;
+            flex: 4;
+            padding: 20px;
+
+            .userTitleContainer {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .userAddButton {
+                width: 80px;
+                border: none;
+                padding: 5px;
+                background-color: teal;
+                border-radius: 5px;
+            }
+
+            .uc {
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+            }
+
+            .us {
+                flex: 1;
+                padding: 20px;
+                // -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+                // box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+            }
+
+            .ust {
+                display: flex;
+                align-items: center;
+            }
+
+            .userShowBottom {
+                display: flex;
+                justify-content: space-between;
+                padding: 2vh;
+            }
+
+            .DetailsOfTheRequester,
+            .tripDetails,
+            .DetailsOfCab,
+            .onBehalf,
+            .Round-Trip {
+                -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+                box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+                width: 35vh;
+                padding: 2vh;
+                margin-bottom: 5%;
+                height: 30vh;
+            }
+
+          
+            .Round-Trip{
+                display: none;
+            }
+
+            .userShowImg {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            .ustt {
+                display: flex;
+                flex-direction: column;
+                margin-left: 20px;
+            }
+
+            .userShowUsername {
+                font-weight: 600;
+            }
+
+            .userShowUserTitle {
+                font-weight: 300;
+            }
+
+            .userShowTitle {
+                font-size: 14px;
+                font-weight: 600;
+                color: rgb(175, 170, 170);
+            }
+
+            .userShowInfo {
+                display: flex;
+                align-items: center;
+                margin: 20px 0px;
+                color: #444;
+            }
+
+            .userShowIcon {
+                font-size: 16px !important;
+            }
+
+            .userShowInfoTitle {
+                margin-left: 10px;
+            }
+
+            .uup {
+                display: flex;
+               justify-content: space-evenly;
+                padding: 20px;
+                // -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+                // box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+                margin-left: 20px;
+            }
+
+            .userUpdateTitle {
+                position:absolute;
+                font-size: 24px;
+                font-weight: 600;
+            }
+
+            .userUpdateForm {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+                margin-right: 1vh;
+            }
+            .userUpdateForm1{
+                display: flex;
+                justify-content: space-between;
+                margin-right: -2vh;
+            }
+
+            .ch{
+                display: flex;
+                font-size: 24px;
+                justify-content: space-evenly;
+            }
+            .subch input{
+                height: 2vh;
+                margin-right: 1vh;
+            }
+
+            .userUpdateLeft{
+                position: relative;
+                -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+                box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+                padding-left: 3vh;
+                padding-right: 3vh;
+                padding-bottom: 3vh;
+                padding-top: 6vh;
+                width: 50vh;
+            }
+            .userUpdateLeft1{
+                display: flex;
+                position: relative;
+                -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+                box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+                padding: 3vh;
+                width: 50vh;
+                width: 100%;
+                justify-content: space-evenly;
+            }
+            .blockingUserUpdateItem{
+                display: flex;
+            }
+
+            .userUpdateTitle{
+                top:3vh;
+            }
+            .userUpdateTitle1{
+                top:3vh;
+                font-size: 36px;
+                font-weight: 700;
+            }
+            .subUserUpdateTitle{
+                margin-top: 5vh;
+            }
+
+            .userUpdateItem {
+                display: flex;
+                flex-direction: column;
+                margin-top: 10px;
+            }
+
+            .userUpdateItem>label {
+                margin-bottom: 5px;
+                font-size: 14px;
+            }
+
+            .userUpdateInput {
+                border: none;
+                width: 250px;
+                height: 30px;
+                border-bottom: 1px solid gray;
+            }
+
+            .userUpdateRight {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                left: -5vh;
+            }
+
+            .userUpdateUpload {
+                display: flex;
+                align-items: center;
+            }
+
+            .userUpdateImg {
+                width: 100px;
+                height: 100px;
+                border-radius: 10px;
+                object-fit: cover;
+                margin-right: 20px;
+            }
+
+            .userUpdateIcon {
+                cursor: pointer;
+            }
+
+            .userUpdateButton {
+                border-radius: 5px;
+                border: none;
+                padding: 5px;
+                cursor: pointer;
+                background-color: darkblue;
+                color: white;
+                font-weight: 600;
+            }
+
+            .aaright{
+                // -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+                // box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+                width: 100vh;
+                height: 70vh;
+                margin-top: 2vh;
+            }
+
+            .aatable{
+                -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+                box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+                width: 100vh;
+                height: 32vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 48px;
+                font-weight: 700;
+            }
+
+            .dropdown {
+                margin: 20px auto;
+                display: flex;
+                position: relative;
+
+                select {
+                    margin-left: 2vh;
+                    margin-top: 1%;
+                }
+
+                option {
+                    font-size: 36px;
+                }
+
+                #ststusDiv {
+                    display: flex;
+                }
+
+                #ddStatus {
+                    display: flex;
+                    flex-direction: column;
+
+                    #blockdiv {
+                        display: none;
+                    }
+                    .cabdriverunava{
+                        margin: 30px;
+                        padding-right: 70px;
+                    }
+                }
+
+               
+            }
+        }
+    }
+}
