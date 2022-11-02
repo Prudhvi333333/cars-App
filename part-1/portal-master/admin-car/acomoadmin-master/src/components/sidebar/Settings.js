@@ -52,7 +52,12 @@ function Settings() {
       key: "viewDetails",
       dataIndex: "viewDetails",
       render: (text, record) => (
-        <button onClick={() => { editNewUser(record.id) }} className="UAB1">
+        <button
+          onClick={() => {
+            editNewUser(record.id);
+          }}
+          className="UAB1"
+        >
           View Details
         </button>
       ),
@@ -73,6 +78,10 @@ function Settings() {
           <button className="UAB" onClick={addNewUser}>
             ADD A USER
           </button>
+
+          <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTIEgKM8Lquw4go6Fw11wOkhaymzuIWD3Dc-1PPEZiinsf8oYZ2SfPKFQvY62CSzshOHTW13l11XZdy/pub?gid=0&single=true&output=csv">
+            Click here to download template
+          </a>
         </div>
         <div className="uT">
           {users !== [] && (

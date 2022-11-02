@@ -20,30 +20,14 @@ const Datatable = () => {
     );
     const newData = [];
     for (let i in data) {
-      newData.push({ ...data[i], id: i });
-    }
+      const available =
+        Date.now() > Date.parse(data[i].busyUntil) ? "true" : "false";
 
-    const columnsOverALL = [
-      "VIEW DETAILS",
-      "VEHICLE_NUMBER",
-      "COMPANY",
-      "SEATCAPCITY",
-      "INSURANCE",
-      "INSURANCE DATE",
-      "RC",
-      "RC NUMBER",
-      "KMS TRAVELLED",
-      "DATE OF SERVICE",
-    ];
+      newData.push({ ...data[i], id: i, available });
+    }
 
     const cols = [];
-    for (let i in newData[0]) {
-      cols.push({
-        title: i.toUpperCase(),
-        dataIndex: i,
-        key: i,
-      });
-    }
+
     cols.unshift({
       title: "View Details".toLocaleUpperCase(),
       key: "viewDetails",
@@ -54,7 +38,44 @@ const Datatable = () => {
         </Link>
       ),
     });
-    //console.log(cols);
+    cols.push({
+      title: "NAME",
+      dataIndex: "name",
+      key: "name",
+    });
+    cols.push({
+      title: "MOBILE",
+      dataIndex: "mobile",
+      key: "mobile",
+    });
+    cols.push({
+      title: "EMERGENCY NUMBER",
+      dataIndex: "emergencymobile",
+      key: "emergencymobile",
+    });
+    cols.push({
+      title: "DRIVING LISCENSE",
+      dataIndex: "dlnumber",
+      key: "dlnumber",
+    });
+    cols.push({
+      title: "BUSY_UNTIL",
+      dataIndex: "busyUntil",
+      key: "busyUntil",
+    });
+
+    cols.push({
+      title: "Available",
+      dataIndex: "available",
+      key: "available",
+      render: (text, record) => {
+        if (record.available == "true") {
+          return <td style={{ color: "green" }}>Available</td>;
+        } else {
+          return <td style={{ color: "red" }}>Unavailable</td>;
+        }
+      },
+    });
 
     setColumns(cols);
     setData(newData);

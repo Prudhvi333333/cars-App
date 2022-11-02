@@ -26,13 +26,37 @@ const Datatable = () => {
     newData.reverse();
 
     const cols = [];
-    for (let i in newData[0]) {
-      cols.push({
-        title: i.toUpperCase(),
-        dataIndex: i,
-        key: i,
-      });
-    }
+    cols.push({
+      title: "BOOKING DATE",
+      dataIndex: "Booking_Date",
+      key: "Booking_Date",
+    });
+    cols.push({
+      title: "DATE",
+      dataIndex: "DATE",
+      key: "DATE",
+    });
+    cols.push({
+      title: "STATUS",
+      dataIndex: "Status",
+      key: "Status",
+      render: (text, record) => {
+        if (record.Status == "Approved") {
+          return <td style={{ color: "green" }}>{record.Status}</td>;
+        }
+        if (record.Status == "Rejected") {
+          return <td style={{ color: "yellow" }}>{record.Status}</td>;
+        }
+        if (record.Status == "Pending") {
+          return <td style={{ color: "red" }}>{record.Status}</td>;
+        }
+      },
+    });
+    cols.push({
+      title: "BOOKED FROM",
+      dataIndex: "bookedFrom",
+      key: "bookedFrom",
+    });
     cols.unshift({
       title: "View Details".toLocaleUpperCase(),
       key: "viewDetails",
@@ -44,27 +68,6 @@ const Datatable = () => {
       ),
     });
     cols.pop();
-
-    for (let i in cols) {
-      if (cols[i]["title"] == "STATUS") {
-        cols[i] = {
-          title: "STATUS",
-          dataIndex: "Status",
-          key: "Status",
-          render: (text, record) => {
-            if (record.Status == "Approved") {
-              return <td style={{ color: "green" }}>{record.Status}</td>;
-            }
-            if (record.Status == "Rejected") {
-              return <td style={{ color: "yellow" }}>{record.Status}</td>;
-            }
-            if (record.Status == "Pending") {
-              return <td style={{ color: "red" }}>{record.Status}</td>;
-            }
-          },
-        };
-      }
-    }
 
     setColumns(cols);
     setData(newData);

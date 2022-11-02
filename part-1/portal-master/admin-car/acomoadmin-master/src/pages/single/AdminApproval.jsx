@@ -61,12 +61,6 @@ export default function AdminApproval() {
     }
   };
 
-  useEffect(() => {
-    getCabsData();
-    getDriversData();
-    getCurrentData();
-  }, []);
-
   const hours = [];
   for (let i = 0; i <= 12; i++) {
     hours.push(i);

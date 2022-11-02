@@ -89,15 +89,12 @@ const Singlereqcab = ({ selected, setSelected }) => {
 
   useEffect(() => {
     getCurrentData();
-    getUserData();
-    getDriversData();
-    // getCabsData();
-    // console.log(currentData);
   }, []);
 
   useEffect(() => {
-    // console.log(currentData);
     getCabsData();
+    getUserData();
+    getDriversData();
   }, [currentData]);
 
   const hours = [];
@@ -300,7 +297,7 @@ const Singlereqcab = ({ selected, setSelected }) => {
     <div>
       <div className="single">
         <div className="si">
-        <Sidebar />
+          <Sidebar />
         </div>
         <div className="singleContainer">
           <Navbar />
@@ -412,7 +409,7 @@ const Singlereqcab = ({ selected, setSelected }) => {
                   </div> */}
 
                       <div className="flex-box">
-                        <div className="onBehalf">
+                        {/* <div className="onBehalf">
                           <span className="userShowTitle">On Behalf</span>
                           <div className="userShowInfo">
                             <label> Name: </label>
@@ -432,7 +429,7 @@ const Singlereqcab = ({ selected, setSelected }) => {
                               {currentData.email}
                             </span>
                           </div>
-                        </div>
+                        </div> */}
 
                         <div className="Round-Trip">
                           <span className="userShowTitle">Round Trip</span>
@@ -719,11 +716,6 @@ const Singlereqcab = ({ selected, setSelected }) => {
                                     />
                                   </div>
 
-                                  {/* <span className="userShowTitle">Cabs to check</span>
-              <div className="userUpdateItem">
-                <label>Click to see Booked cabs for Today : </label>
-                <a href="">Cabs with detials</a>
-              </div> */}
                                   <div className="userUpdateItem">
                                     Enter the time unavailable for cab and
                                     driver to return
